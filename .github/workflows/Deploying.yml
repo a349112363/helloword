@@ -16,10 +16,13 @@ jobs:
     - name: Decode and install certificate
       run: |
         echo "${{ secrets.CERTIFICATE_PASSWORD }}" | base64 --decode > certificate.p12
+	# 创建一个新的钥匙链（如果没有的话）
+   	security create-keychain -p "" build.keychain
+	# 解锁钥匙链
+	security unlock-keychain -p "" ~/Library/Keychains/build.keychain
         security import certificate.p12 -P "${{ secrets.CERTIFICATE }}" -A
         security list-keychains -s ~/Library/Keychains/build.keychain
 	security default-keychain -s ~/Library/Keychains/build.keychain
-	security unlock-keychain -p "" ~/Library/Keychains/build.keychain
         security set-key-partition-list -S apple-tool:,apple: -s -k "" ~/Library/Keychains/build.keychain
 
     - name: Decode provisioning profile
