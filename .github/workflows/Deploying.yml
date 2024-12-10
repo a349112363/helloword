@@ -15,7 +15,9 @@ jobs:
 
     - name: Decode and install certificate
       run: |
-            echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
+        echo "$CERTIFICATE" | base64 --decode > "certificate.p12"
+       env:
+        CERTIFICATE: ${{ secrets.CERTIFICATE }}
 
 
     - name: Decode provisioning profile
