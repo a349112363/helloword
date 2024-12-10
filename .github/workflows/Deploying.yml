@@ -15,8 +15,7 @@ jobs:
 
     - name: Decode and install certificate
       run: |
-    	echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
- 
+    	
 
     - name: Decode provisioning profile
       run: |
