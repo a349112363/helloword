@@ -15,7 +15,6 @@ jobs:
 
     - name: Install CocoaPods
       run: |
-        cd ios
         pod install
 
     - name: Build the app
