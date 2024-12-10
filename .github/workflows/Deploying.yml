@@ -13,6 +13,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+ - name: Decode and install certificate
+      run: |
+        echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
+        security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
+        security list-keychains -s build.keychain
+        security set-key-partition-list -S apple-tool:,apple: -s build.keychain
+
+    - name: Decode provisioning profile
+      run: |
+        echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
+
     - name: Install CocoaPods
       run: |
         pod install
