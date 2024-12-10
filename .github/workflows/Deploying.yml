@@ -13,7 +13,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-
+    - name: Decode and install certificate
+      run: |
+        echo "${{ secrets.CERTIFICATE_PASSWORD }}" | base64 --decode > certificate.p12
+   	security create-keychain -p "" build.keychain
+        security import certificate.p12 -P "${{ secrets.CERTIFICATE }}" -A
 
     - name: Decode provisioning profile
       run: |
