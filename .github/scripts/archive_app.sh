@@ -3,7 +3,7 @@
 set -eo pipefail
 
 xcodebuild -workspace helloword.xcworkspace \
-            -scheme helloword\ iOS \
+            -scheme helloword \
             -sdk iphoneos \
             -configuration AdHoc \
             -archivePath $PWD/build/helloword.xcarchive \
