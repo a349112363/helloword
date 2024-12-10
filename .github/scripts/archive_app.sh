@@ -2,9 +2,9 @@
 
 set -eo pipefail
 
-xcodebuild -workspace Calculator.xcworkspace \
-            -scheme Calculator\ iOS \
+xcodebuild -workspace helloword.xcworkspace \
+            -scheme helloword \ iOS \
             -sdk iphoneos \
-            -configuration AppStoreDistribution \
-            -archivePath $PWD/build/Calculator.xcarchive \
+            -configuration AdHoc \
+            -archivePath $PWD/build/helloword.xcarchive \
             clean archive | xcpretty
