@@ -42,7 +42,6 @@ jobs:
                    -sdk iphoneos \
                    -configuration AdHoc \
                    -archivePath $PWD/build/helloword.xcarchive \
-                   clean archive
 
     - name: Export IPA
       run: |
