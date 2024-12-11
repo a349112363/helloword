@@ -40,16 +40,16 @@ jobs:
         xcodebuild -workspace helloword.xcworkspace \
                    -scheme helloword \
                    -sdk iphoneos \
-                   -configuration AdHoc \
+                   -configuration Release \
                    -archivePath $PWD/build/helloword.xcarchive \
            	   -allowProvisioningUpdates
 
+    - name: Export IPA
+      run: |
         xcodebuild -exportArchive \
                    -archivePath $PWD/build/helloword.xcarchive \
                    -exportOptionsPlist exportOptions.plist  # 需要根据你的项目设置创建此文件
                    -exportPath $PWD/build \
             	   -exportArchive | xcpretty
-
-
 
     
