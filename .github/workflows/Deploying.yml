@@ -13,10 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-  	- name: Decode certificate
-        run: |
-          echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
-          ls -l certificate.p12  # Debug: Check if the certificate is decoded correctly
+
 
      
 
