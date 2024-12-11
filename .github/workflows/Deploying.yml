@@ -20,7 +20,7 @@ jobs:
 
     - name: Decode and install certificate
       run: |
-        echo "${{ secrets.CERTIFICATE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
+        echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
 
 
     
