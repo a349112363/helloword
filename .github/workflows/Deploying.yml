@@ -25,11 +25,11 @@ jobs:
 
     - name: Create and unlock keychain
       run: |
-        security create-keychain -p "github" build.keychain
+        security create-keychain -p "" build.keychain
         security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
         security import ProfilehellowordAdHot.mobileprovision -A
         security list-keychains -s build.keychain
-        security unlock-keychain -p "github" build.keychain
+        security unlock-keychain -p "" build.keychain
 
     - name: Install CocoaPods
       run: |
