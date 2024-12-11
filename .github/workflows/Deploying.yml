@@ -18,13 +18,19 @@ jobs:
       run: |
         echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
 
-    - name: Decode and install certificate
+    - name: Decode certificate
       run: |
         echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
-        security create-keychain -p "" build.keychain
+        ls -l certificate.p12
+
+    - name: Create and unlock keychain
+      run: |
+        security create-keychain -p "github" build.keychain
         security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
+        security import ProfilehellowordAdHot.mobileprovision -A
         security list-keychains -s build.keychain
-        security set-key-partition-list -S apple-tool:,apple: -s build.keychain
+        security unlock-keychain -p "github" build.keychain
+
     - name: Install CocoaPods
       run: |
         pod install
