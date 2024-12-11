@@ -16,7 +16,7 @@ jobs:
 	 - name: Decode and install certificate
         run: |
  # 解码并安装证书
-          echo "${{ secrets.P12_CERTIFICATE }}" | base64 --decode > certificate.p12
+          echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
           security create-keychain -p "" build.keychain
           security import certificate.p12 -k ~/Library/Keychains/build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
           security list-keychains -s ~/Library/Keychains/build.keychain
