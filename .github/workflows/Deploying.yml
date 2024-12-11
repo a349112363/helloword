@@ -47,7 +47,7 @@ jobs:
                    -sdk iphoneos \
                    -configuration AdHoc \
                    -archivePath $PWD/build/helloword.xcarchive \
-           	   ls $PWD/build/helloword.xcarchive \
+           	   ls -l $PWD/build/helloword.xcarchive \
            	   -allowProvisioningUpdates
 
     - name: Export IPA
