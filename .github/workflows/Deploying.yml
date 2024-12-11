@@ -22,5 +22,29 @@ jobs:
       run: |
         echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
         security create-keychain -p "" build.keychain
+        security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
+        security list-keychains -s build.keychain
+        security set-key-partition-list -S apple-tool:,apple: -s build.keychain
+    - name: Install CocoaPods
+      run: |
+        pod install
+
+    - name: Build the app
+      run: |
+        xcodebuild -workspace helloword.xcworkspace \
+                   -scheme helloword \
+                   -sdk iphoneos \
+                   -configuration AdHoc \
+                   -archivePath $PWD/build/helloword.xcarchive \
+                   clean archive
+
+    - name: Export IPA
+      run: |
+        xcodebuild -exportArchive \
+                   -archivePath $PWD/build/helloword.xcarchive \
+                   -exportOptionsPlist exportOptions.plist  # 需要根据你的项目设置创建此文件
+                   -exportPath $PWD/build \
+           	   -allowProvisioningUpdates \
+            	   -exportArchive | xcpretty
 
     
