@@ -13,6 +13,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+
+
+    - name: Decode provisioning profile
+      run: |
+        echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
+
 	 - name: Decode and install certificate
         run: |
  # 解码并安装证书
@@ -21,10 +27,6 @@ jobs:
           security import certificate.p12 -k ~/Library/Keychains/build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
           security list-keychains -s ~/Library/Keychains/build.keychain
           security set-keychain-settings -t 3600 -l ~/Library/Keychains/build.keychain
-
-    - name: Decode provisioning profile
-      run: |
-        echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
 
     - name: Install CocoaPods
       run: |
