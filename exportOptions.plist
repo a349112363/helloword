@@ -5,7 +5,7 @@
 	<key>timeID</key>
 	<string>DDGNDSD6WU</string>
 	<key>method</key>
-	<string>ad-hoc</string>
+	<string>development</string>
 	<key>uploadBitcode</key>
 	<true/>
 	<key>uploadSymbols</key>
