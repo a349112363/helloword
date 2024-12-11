@@ -19,8 +19,8 @@ jobs:
         echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
 
     - name: Decode and install certificate
-        run: 
-          echo " aaa "
+      run: |
+        echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
 
 
     
