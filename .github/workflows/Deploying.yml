@@ -21,6 +21,10 @@ jobs:
     - name: Decode and install certificate
       run: |
         echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
-
+        security create-keychain -p "" build.keychain
+        security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
+        security list-keychains -s build.keychain
+        security set-key-partition-list -S apple-tool:,apple: -s build.keychain
+	
 
     
