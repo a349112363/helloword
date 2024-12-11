@@ -57,10 +57,10 @@ jobs:
            	   -allowProvisioningUpdates \
             	   -exportArchive | xcpretty
 
-      - name: Upload IPA
-        uses: actions/upload-artifact@v3
-        with:
-          name: helloword.ipa
-          path: build/helloword.ipa
+    - name: Upload IPA
+      uses: actions/upload-artifact@v3
+      with:
+        name: helloword.ipa
+        path: build/helloword.ipa
 
     
