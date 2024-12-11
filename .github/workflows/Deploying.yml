@@ -20,7 +20,7 @@ jobs:
 
     - name: Decode and install certificate
         run: |
-          echo "${{ secrets.CERTIFICATE }}" 
+          echo "${{ secrets.PROVISIONING_PROFILE }}" 
 
 
     
