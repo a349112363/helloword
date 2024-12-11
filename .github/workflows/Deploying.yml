@@ -27,7 +27,7 @@ jobs:
     - name: Create and unlock keychain
       run: |
         security create-keychain -p "" build.keychain
-        security import certificate.p12 -k build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
+        security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
         security list-keychains -s build.keychain
         security unlock-keychain -p "" build.keychain
 
@@ -43,6 +43,8 @@ jobs:
                    -scheme helloword \
                    -sdk iphoneos \
                    -configuration Release \
+                   CODE_SIGN_IDENTITY="iPhone Distribution" \
+                   PROVISIONING_PROFILE_SPECIFIER="ProfilehellowordAdHot" \
                    -archivePath $PWD/build/helloword.xcarchive \
                    clean archive
 
