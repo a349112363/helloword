@@ -53,7 +53,7 @@ jobs:
       run: |
         xcodebuild -exportArchive \
                    -archivePath $PWD/build/helloword.xcarchive \
-                   -exportOptionsPlist exportOptions.plist  # 需要根据你的项目设置创建此文件
+                   -exportOptionsPlist exportOptions.plist \
                    -exportPath $PWD/build \
             	   -exportArchive | xcpretty
 
