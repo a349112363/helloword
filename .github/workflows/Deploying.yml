@@ -21,7 +21,6 @@ jobs:
     - name: Decode and install certificate
       run: |
         echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
-        ls -l certificate.p12
 	
 
     
