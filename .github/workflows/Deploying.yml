@@ -37,8 +37,6 @@ jobs:
 
     - name: Build the app
       run: |
-        # Clean the project
-        xcodebuild clean -workspace helloword.xcworkspace -scheme helloword -configuration Release
         xcodebuild -workspace helloword.xcworkspace \
                    -scheme helloword \
                    -sdk iphoneos \
