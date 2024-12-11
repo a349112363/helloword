@@ -31,6 +31,8 @@ jobs:
         security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
         security list-keychains -s build.keychain
         security unlock-keychain -p "" build.keychain
+        security list-keychains
+        security show-keychain-info build.keychain
 
     - name: Install CocoaPods
       run: |
