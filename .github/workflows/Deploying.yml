@@ -41,7 +41,7 @@ jobs:
         xcodebuild -workspace helloword.xcworkspace \
                    -scheme helloword \
                    -sdk iphoneos \
-                   -configuration AdHoc \
+                   -configuration Release \
                    -archivePath $PWD/build/helloword.xcarchive \
                    clean archive
 
