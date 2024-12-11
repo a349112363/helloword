@@ -13,13 +13,26 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Decode and install certificate
-      run: |
-        echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
-	security create-keychain -p "" build.keychain
-        security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
-        security list-keychains -s build.keychain
-        security set-key-partition-list -S apple-tool:,apple: -s build.keychain
+  	- name: Decode certificate
+        run: |
+          echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
+          ls -l certificate.p12  # Debug: Check if the certificate is decoded correctly
+
+      - name: Create and unlock keychain
+        run: |
+          security create-keychain -p "yourSecurePassword" build.keychain
+          security unlock-keychain -p "yourSecurePassword" build.keychain
+          security list-keychains -s build.keychain  # Debug: Verify the keychain is created
+
+      - name: Import certificate into keychain
+        run: |
+          security import certificate.p12 -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
+          security list-keychains -s build.keychain  # Debug: Verify the certificate is imported
+
+      - name: Set key partition list
+        run: |
+          security set-key-partition-list -S apple-tool:,apple: -s build.keychain
+
 
     - name: Decode provisioning profile
       run: |
