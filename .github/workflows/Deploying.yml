@@ -17,6 +17,8 @@ jobs:
     - name: Decode provisioning profile
       run: |
         echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
+        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+        cp ProfilehellowordAdHot.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles
 
     - name: Decode certificate
       run: |
