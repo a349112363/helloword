@@ -14,10 +14,6 @@ jobs:
       uses: actions/checkout@v2
 
 
-
-     
-
-
     - name: Decode provisioning profile
       run: |
         echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
