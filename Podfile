@@ -7,16 +7,16 @@ target 'helloword' do
 
   # Pods for helloword
   pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'RxGesture'
-  pod 'RxSwiftExt'
-  pod 'RxDataSources'
-  pod 'NSObject+Rx', '~> 5.0'
-  pod 'MJRefresh'
-  pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
-  pod 'YYText'
-  pod 'SwifterSwift', '~> 5.0'
-  pod 'MBProgressHUD'
+#  pod 'RxCocoa'
+#  pod 'RxGesture'
+#  pod 'RxSwiftExt'
+#  pod 'RxDataSources'
+#  pod 'NSObject+Rx', '~> 5.0'
+#  pod 'MJRefresh'
+#  pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
+#  pod 'YYText'
+#  pod 'SwifterSwift', '~> 5.0'
+#  pod 'MBProgressHUD'
 #  pod 'Moya'
 #  pod 'SnapKit'
 #  pod 'SwiftyJSON'
