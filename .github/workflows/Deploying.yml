@@ -64,8 +64,8 @@ jobs:
         pod install
 
     - name: Clean Xcode Derived Data
-        run: |
-            rm -rf ~/Library/Developer/Xcode/DerivedData/*
+      run: |
+        rm -rf ~/Library/Developer/Xcode/DerivedData/*
 
     - name: Build the app
       run: |
