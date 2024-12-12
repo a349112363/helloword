@@ -17,18 +17,17 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.6.10'
+        ruby --version
 
-    - name: Install Homebrew (if necessary)
+    - name: Install Bundler 1.17.2
       run: |
-        if ! command -v brew &> /dev/null
-        then
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-        fi
+        gem install bundler -v 1.17.2  # 安装特定版本的 Bundler
+        bundler -v  # 输出 Bundler 版本，确认是否安装成功
 
     - name: Install CocoaPods 1.16.2
       run: |
         sudo gem install cocoapods -v 1.16.2
-
+        pod --version
 
     - name: Set up Xcode version
       run: |
@@ -59,10 +58,6 @@ jobs:
         security import certificate.p12 -k build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
         security find-identity -v -p codesigning build.keychain
-
-    - name: Verify CocoaPods installation
-      run: |
-        pod --version
 
     - name: pod install  CocoaPods
       run: |
