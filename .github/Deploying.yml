@@ -1,0 +1,66 @@
+name: Build iOS IPA
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Deploying
+    runs-on: macos-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Xcode version
+      run: |
+         sudo xcode-select -s /Applications/Xcode_15.2.app
+
+    - name: Decode provisioning profile
+      run: |
+        echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ProfilehellowordAdHot.mobileprovision
+        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+        cp ProfilehellowordAdHot.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+
+    - name: Decode certificate
+      run: |
+        echo "${{ secrets.CERTIFICATE }}" | base64 --decode > certificate.p12
+
+    - name: Create and unlock keychain
+      run: |
+        security create-keychain -p "" build.keychain
+        security default-keychain -s build.keychain
+        security unlock-keychain -p "" build.keychain
+        security import certificate.p12 -k build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
+        security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
+        security find-identity -v -p codesigning build.keychain
+
+    - name: Install CocoaPods
+      run: |
+        pod install
+
+    - name: Build the app
+      run: |
+        xcodebuild -workspace helloword.xcworkspace \
+                   -scheme helloword \
+                   -sdk iphoneos \
+                   -configuration AdHoc \
+                   -archivePath $PWD/build/helloword.xcarchive \
+                   clean archive | xcpretty
+
+    - name: Export IPA
+      run: |
+        xcodebuild -archivePath $PWD/build/helloword.xcarchive \
+                   -exportOptionsPlist exportOptions.plist \
+                   -exportPath $PWD/build \
+           	   -allowProvisioningUpdates \
+            	   -exportArchive | xcpretty
+
+    - name: Upload IPA
+      uses: actions/upload-artifact@v3
+      with:
+        name: helloword.ipa
+        path: build/helloword.ipa
+
+    
