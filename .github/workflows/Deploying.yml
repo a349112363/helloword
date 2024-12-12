@@ -24,13 +24,6 @@ jobs:
       run: |
         sudo gem install cocoapods -v 1.16.2
 
-    - name: Verify CocoaPods installation
-      run: |
-        pod --version
-
-    - name: pod install  CocoaPods
-      run: |
-        pod install
 
     - name: Set up Xcode version
       run: |
@@ -62,9 +55,17 @@ jobs:
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
         security find-identity -v -p codesigning build.keychain
 
-    - name: Install CocoaPods
+    - name: Verify CocoaPods installation
+      run: |
+        pod --version
+
+    - name: pod install  CocoaPods
       run: |
         pod install
+
+    - name: Clean Xcode Derived Data
+        run: |
+            rm -rf ~/Library/Developer/Xcode/DerivedData/*
 
     - name: Build the app
       run: |
