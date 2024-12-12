@@ -13,18 +13,23 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-         ruby-version: '2.6.10'  # 根据你的项目设置合适的 Ruby 版本
-
-    - name: Set securerandom
+    - name: Install Homebrew (if necessary)
       run: |
-        gem install securerandom -v 0.3.2
+        if ! command -v brew &> /dev/null
+        then
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        fi
 
-    - name: Install CocoaPods
+    - name: Install CocoaPods 1.16.2
       run: |
-        gem install cocoapods
+        sudo gem install cocoapods -v 1.16.2
+
+    - name: Verify CocoaPods installation
+      run: |
+        pod --version
+
+    - name: pod install  CocoaPods
+      run: |
         pod install
 
     - name: Set up Xcode version
