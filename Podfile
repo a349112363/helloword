@@ -1,6 +1,8 @@
 # Uncomment the next line to define a global platform for your project
  platform :ios, '12.0'
 
+install! 'cocoapods', :paranoid => true, :COCOAPODS_PARALLEL_CODE_SIGN => true
+
 target 'helloword' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -28,7 +30,7 @@ target 'helloword' do
 #  pod 'Reusable'
 #  pod 'SDWebImage'
 #  # Add the Firebase pod for Google Analytics
-  pod 'FirebaseAnalytics'
+#  pod 'FirebaseAnalytics'
 #  pod 'NVActivityIndicatorView'
 #  pod 'UITableView+FDTemplateLayoutCell'
 #  pod 'IQKeyboardManagerSwift'
@@ -37,12 +39,12 @@ target 'helloword' do
 
   # Add the pods for any other Firebase products you want to use in your app
   # For example, to use Firebase Authentication and Cloud Firestore
-  pod 'FirebaseAuth'
+#  pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
-  pod 'FirebaseCrashlytics'
-  pod 'GoogleSignIn'
-  pod 'FBSDKLoginKit','~> 17.0.1'
-  pod 'FBSDKShareKit','~> 17.0.1'
+#  pod 'FirebaseCrashlytics'
+#  pod 'GoogleSignIn'
+#  pod 'FBSDKLoginKit','~> 17.0.1'
+#  pod 'FBSDKShareKit','~> 17.0.1'
 #
 #  #穿山甲
 #  pod 'Ads-Global','~> 5.8.0.8'
