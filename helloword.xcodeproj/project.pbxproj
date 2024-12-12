@@ -170,6 +170,7 @@
 				9A66D75C2D07CACA0098E8B8 /* Sources */,
 				9A66D75D2D07CACA0098E8B8 /* Frameworks */,
 				9A66D75E2D07CACA0098E8B8 /* Resources */,
+				6AF1DCD8CF3CCB05A29A6446 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +289,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6AF1DCD8CF3CCB05A29A6446 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helloword/Pods-helloword-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helloword/Pods-helloword-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloword/Pods-helloword-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7580D2ACBA90DF525971206F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
