@@ -25,7 +25,7 @@ target 'helloword' do
 #  pod 'GTMBase64'
 #  pod 'HBDNavigationBar', '~> 1.7.5'
 #  pod 'Hue'
-  pod 'JSONModel', '~> 1.2.0'
+#  pod 'JSONModel', '~> 1.2.0'
 #  pod 'Reusable'
 #  pod 'SDWebImage'
 #  # Add the Firebase pod for Google Analytics
@@ -39,7 +39,7 @@ target 'helloword' do
   # Add the pods for any other Firebase products you want to use in your app
   # For example, to use Firebase Authentication and Cloud Firestore
 #  pod 'FirebaseAuth'
-#  pod 'FirebaseFirestore'
+pod 'FirebaseFirestore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'main'
 #  pod 'FirebaseCrashlytics'
 #  pod 'GoogleSignIn'
 #  pod 'FBSDKLoginKit','~> 17.0.1'
