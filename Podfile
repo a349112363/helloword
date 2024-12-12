@@ -6,7 +6,7 @@ target 'helloword' do
   use_frameworks!
 
   # Pods for helloword
-  pod 'RxSwift'
+#  pod 'RxSwift'
 #  pod 'RxCocoa'
 #  pod 'RxGesture'
 #  pod 'RxSwiftExt'
@@ -16,7 +16,7 @@ target 'helloword' do
 #  pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
 #  pod 'YYText'
 #  pod 'SwifterSwift', '~> 5.0'
-#  pod 'MBProgressHUD'
+  pod 'MBProgressHUD'
 #  pod 'Moya'
 #  pod 'SnapKit'
 #  pod 'SwiftyJSON'

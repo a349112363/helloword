@@ -291,8 +291,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		6AF1DCD8CF3CCB05A29A6446 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -302,7 +301,7 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-helloword/Pods-helloword-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloword/Pods-helloword-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
