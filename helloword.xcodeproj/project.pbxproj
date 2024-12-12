@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		076CB89E65016F7A1A74571F /* Pods_hellowordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5716C6A9B6A8A02416922B /* Pods_hellowordTests.framework */; };
-		1A1A88C00AB2AC9047A4DFEA /* Pods_helloword_hellowordUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23A63F1B444AAA21C14B91B /* Pods_helloword_hellowordUITests.framework */; };
-		9A66D7642D07CACA0098E8B8 /* hellowordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66D7632D07CACA0098E8B8 /* hellowordApp.swift */; };
-		9A66D7662D07CACA0098E8B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66D7652D07CACA0098E8B8 /* ContentView.swift */; };
 		9A66D7682D07CACB0098E8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A66D7672D07CACB0098E8B8 /* Assets.xcassets */; };
 		9A66D76C2D07CACB0098E8B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A66D76B2D07CACB0098E8B8 /* Preview Assets.xcassets */; };
 		9A66D7762D07CACB0098E8B8 /* hellowordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66D7752D07CACB0098E8B8 /* hellowordTests.swift */; };
 		9A66D7802D07CACB0098E8B8 /* hellowordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66D77F2D07CACB0098E8B8 /* hellowordUITests.swift */; };
 		9A66D7822D07CACB0098E8B8 /* hellowordUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66D7812D07CACB0098E8B8 /* hellowordUITestsLaunchTests.swift */; };
 		9A66D78F2D07E89B0098E8B8 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A66D78E2D07E89B0098E8B8 /* exportOptions.plist */; };
+		9ACC1D872D0A8E06005DC616 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC1D852D0A8E06005DC616 /* Application.swift */; };
+		9ACC1D882D0A8E06005DC616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC1D862D0A8E06005DC616 /* AppDelegate.swift */; };
+		9ACC1D8A2D0A8E6E005DC616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC1D892D0A8E6E005DC616 /* ViewController.swift */; };
 		B04F1D8449C1FB897CDDEA8A /* Pods_helloword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6036CD53D80F120E7A4A2E6 /* Pods_helloword.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,11 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		099E1C0B48391DC27F4BD4C4 /* Pods-helloword-hellowordUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloword-hellowordUITests.release.xcconfig"; path = "Target Support Files/Pods-helloword-hellowordUITests/Pods-helloword-hellowordUITests.release.xcconfig"; sourceTree = "<group>"; };
-		44FBF261EE09110E92083BE2 /* Pods-hellowordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellowordTests.debug.xcconfig"; path = "Target Support Files/Pods-hellowordTests/Pods-hellowordTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A66D7602D07CACA0098E8B8 /* helloword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloword.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A66D7632D07CACA0098E8B8 /* hellowordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hellowordApp.swift; sourceTree = "<group>"; };
-		9A66D7652D07CACA0098E8B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A66D7672D07CACB0098E8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A66D7692D07CACB0098E8B8 /* helloword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = helloword.entitlements; sourceTree = "<group>"; };
 		9A66D76B2D07CACB0098E8B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,13 +47,12 @@
 		9A66D77F2D07CACB0098E8B8 /* hellowordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hellowordUITests.swift; sourceTree = "<group>"; };
 		9A66D7812D07CACB0098E8B8 /* hellowordUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hellowordUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9A66D78E2D07E89B0098E8B8 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = exportOptions.plist; sourceTree = SOURCE_ROOT; };
+		9ACC1D852D0A8E06005DC616 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = SOURCE_ROOT; };
+		9ACC1D862D0A8E06005DC616 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		9ACC1D892D0A8E6E005DC616 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		A6036CD53D80F120E7A4A2E6 /* Pods_helloword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helloword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978102855836B5EE058B207 /* Pods-helloword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloword.release.xcconfig"; path = "Target Support Files/Pods-helloword/Pods-helloword.release.xcconfig"; sourceTree = "<group>"; };
-		AD805F3500E8DD0E59289D6F /* Pods-hellowordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellowordTests.release.xcconfig"; path = "Target Support Files/Pods-hellowordTests/Pods-hellowordTests.release.xcconfig"; sourceTree = "<group>"; };
 		C31B9F2047037E697249016D /* Pods-helloword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloword.debug.xcconfig"; path = "Target Support Files/Pods-helloword/Pods-helloword.debug.xcconfig"; sourceTree = "<group>"; };
-		E27426986F0ED3F15DE3E6BF /* Pods-helloword-hellowordUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloword-hellowordUITests.debug.xcconfig"; path = "Target Support Files/Pods-helloword-hellowordUITests/Pods-helloword-hellowordUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F23A63F1B444AAA21C14B91B /* Pods_helloword_hellowordUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helloword_hellowordUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF5716C6A9B6A8A02416922B /* Pods_hellowordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hellowordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076CB89E65016F7A1A74571F /* Pods_hellowordTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1A88C00AB2AC9047A4DFEA /* Pods_helloword_hellowordUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				A6036CD53D80F120E7A4A2E6 /* Pods_helloword.framework */,
-				F23A63F1B444AAA21C14B91B /* Pods_helloword_hellowordUITests.framework */,
-				FF5716C6A9B6A8A02416922B /* Pods_hellowordTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,10 +94,6 @@
 			children = (
 				C31B9F2047037E697249016D /* Pods-helloword.debug.xcconfig */,
 				A978102855836B5EE058B207 /* Pods-helloword.release.xcconfig */,
-				E27426986F0ED3F15DE3E6BF /* Pods-helloword-hellowordUITests.debug.xcconfig */,
-				099E1C0B48391DC27F4BD4C4 /* Pods-helloword-hellowordUITests.release.xcconfig */,
-				44FBF261EE09110E92083BE2 /* Pods-hellowordTests.debug.xcconfig */,
-				AD805F3500E8DD0E59289D6F /* Pods-hellowordTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -137,9 +123,10 @@
 		9A66D7622D07CACA0098E8B8 /* helloword */ = {
 			isa = PBXGroup;
 			children = (
+				9ACC1D892D0A8E6E005DC616 /* ViewController.swift */,
+				9ACC1D862D0A8E06005DC616 /* AppDelegate.swift */,
+				9ACC1D852D0A8E06005DC616 /* Application.swift */,
 				9A66D78E2D07E89B0098E8B8 /* exportOptions.plist */,
-				9A66D7632D07CACA0098E8B8 /* hellowordApp.swift */,
-				9A66D7652D07CACA0098E8B8 /* ContentView.swift */,
 				9A66D7672D07CACB0098E8B8 /* Assets.xcassets */,
 				9A66D7692D07CACB0098E8B8 /* helloword.entitlements */,
 				9A66D76A2D07CACB0098E8B8 /* Preview Content */,
@@ -197,7 +184,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A66D7882D07CACB0098E8B8 /* Build configuration list for PBXNativeTarget "hellowordTests" */;
 			buildPhases = (
-				385BDF9E59FB996FE364D0F2 /* [CP] Check Pods Manifest.lock */,
 				9A66D76D2D07CACB0098E8B8 /* Sources */,
 				9A66D76E2D07CACB0098E8B8 /* Frameworks */,
 				9A66D76F2D07CACB0098E8B8 /* Resources */,
@@ -216,7 +202,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A66D78B2D07CACB0098E8B8 /* Build configuration list for PBXNativeTarget "hellowordUITests" */;
 			buildPhases = (
-				D3225211A235C67E21F8B103 /* [CP] Check Pods Manifest.lock */,
 				9A66D7772D07CACB0098E8B8 /* Sources */,
 				9A66D7782D07CACB0098E8B8 /* Frameworks */,
 				9A66D7792D07CACB0098E8B8 /* Resources */,
@@ -243,6 +228,7 @@
 				TargetAttributes = {
 					9A66D75F2D07CACA0098E8B8 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					9A66D7702D07CACB0098E8B8 = {
 						CreatedOnToolsVersion = 15.2;
@@ -302,28 +288,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		385BDF9E59FB996FE364D0F2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hellowordTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7580D2ACBA90DF525971206F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,28 +310,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3225211A235C67E21F8B103 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-helloword-hellowordUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -375,8 +317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A66D7662D07CACA0098E8B8 /* ContentView.swift in Sources */,
-				9A66D7642D07CACA0098E8B8 /* hellowordApp.swift in Sources */,
+				9ACC1D8A2D0A8E6E005DC616 /* ViewController.swift in Sources */,
+				9ACC1D882D0A8E06005DC616 /* AppDelegate.swift in Sources */,
+				9ACC1D872D0A8E06005DC616 /* Application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = helloword/helloword.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -554,7 +498,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
@@ -567,6 +511,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -578,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = helloword/helloword.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -599,7 +545,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
@@ -619,7 +565,6 @@
 		};
 		9A66D7892D07CACB0098E8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44FBF261EE09110E92083BE2 /* Pods-hellowordTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,7 +588,6 @@
 		};
 		9A66D78A2D07CACB0098E8B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD805F3500E8DD0E59289D6F /* Pods-hellowordTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -667,7 +611,6 @@
 		};
 		9A66D78C2D07CACB0098E8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E27426986F0ED3F15DE3E6BF /* Pods-helloword-hellowordUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -690,7 +633,6 @@
 		};
 		9A66D78D2D07CACB0098E8B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 099E1C0B48391DC27F4BD4C4 /* Pods-helloword-hellowordUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
