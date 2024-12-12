@@ -13,21 +13,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '2.6.10'
-
-    - name: Install Bundler 1.17.2
-      run: |
-        gem install bundler -v 1.17.2  # 安装特定版本的 Bundler
-        bundler -v  # 输出 Bundler 版本，确认是否安装成功
-
-    - name: Install CocoaPods 1.16.2
-      run: |
-        sudo gem install cocoapods -v 1.16.2
-        pod --version
-
     - name: Set up Xcode version
       run: |
          sudo xcode-select -s /Applications/Xcode_15.2.app
@@ -60,6 +45,7 @@ jobs:
 
     - name: pod install  CocoaPods
       run: |
+        pod --version
         pod install
 
     - name: Clean Xcode Derived Data
