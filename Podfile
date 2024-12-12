@@ -28,7 +28,7 @@ target 'helloword' do
 #  pod 'Reusable'
 #  pod 'SDWebImage'
 #  # Add the Firebase pod for Google Analytics
-#  pod 'FirebaseAnalytics'
+  pod 'FirebaseAnalytics'
 #  pod 'NVActivityIndicatorView'
 #  pod 'UITableView+FDTemplateLayoutCell'
 #  pod 'IQKeyboardManagerSwift'
@@ -37,7 +37,7 @@ target 'helloword' do
 
   # Add the pods for any other Firebase products you want to use in your app
   # For example, to use Firebase Authentication and Cloud Firestore
-#  pod 'FirebaseAuth'
+  pod 'FirebaseAuth'
 #  pod 'FirebaseFirestore'
   pod 'FirebaseCrashlytics'
 #  pod 'GoogleSignIn'
