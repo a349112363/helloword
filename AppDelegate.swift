@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Application.shared.configureMainInterface(in: window)
         self.window?.makeKeyAndVisible()
 
-        // 常亮
+        // 222常亮
         UIApplication.shared.isIdleTimerDisabled = true
         
         
