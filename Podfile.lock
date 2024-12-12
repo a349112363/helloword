@@ -1,16 +1,16 @@
 PODS:
-  - RxSwift (6.8.0)
+  - MBProgressHUD (1.2.0)
 
 DEPENDENCIES:
-  - RxSwift
+  - MBProgressHUD
 
 SPEC REPOS:
   trunk:
-    - RxSwift
+    - MBProgressHUD
 
 SPEC CHECKSUMS:
-  RxSwift: 4e28be97cbcfeee614af26d83415febbf2bf6f45
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
-PODFILE CHECKSUM: 740727ef0af3c2efa81caa380e2bbc98eb294253
+PODFILE CHECKSUM: d47f06341450d3b9f236ae76d2e7a4167d6f62ad
 
 COCOAPODS: 1.16.2
