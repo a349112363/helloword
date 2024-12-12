@@ -17,7 +17,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.6.10'
-        ruby --version
+        ruby -v
 
     - name: Install Bundler 1.17.2
       run: |
