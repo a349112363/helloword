@@ -24,16 +24,16 @@ target 'helloword' do
 #  pod 'GTMBase64'
 #  pod 'HBDNavigationBar', '~> 1.7.5'
 #  pod 'Hue'
-  pod 'JSONModel', '~> 1.2.0'
-  pod 'Reusable'
-  pod 'SDWebImage'
+#  pod 'JSONModel', '~> 1.2.0'
+#  pod 'Reusable'
+#  pod 'SDWebImage'
 #  # Add the Firebase pod for Google Analytics
-  pod 'FirebaseAnalytics'
-  pod 'NVActivityIndicatorView'
-  pod 'UITableView+FDTemplateLayoutCell'
-  pod 'IQKeyboardManagerSwift'
-  # For Analytics without IDFA collection capability, use this pod instead
-  # pod ‘Firebase/AnalyticsWithoutAdIdSupport’
+#  pod 'FirebaseAnalytics'
+#  pod 'NVActivityIndicatorView'
+#  pod 'UITableView+FDTemplateLayoutCell'
+#  pod 'IQKeyboardManagerSwift'
+#  # For Analytics without IDFA collection capability, use this pod instead
+#  # pod ‘Firebase/AnalyticsWithoutAdIdSupport’
 
   # Add the pods for any other Firebase products you want to use in your app
   # For example, to use Firebase Authentication and Cloud Firestore
