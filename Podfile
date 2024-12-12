@@ -40,10 +40,10 @@ target 'helloword' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'FirebaseCrashlytics'
-  pod 'GoogleSignIn'
-#
-  pod 'FBSDKLoginKit','~> 17.0.1'
-  pod 'FBSDKShareKit','~> 17.0.1'
+#  pod 'GoogleSignIn'
+##
+#  pod 'FBSDKLoginKit','~> 17.0.1'
+#  pod 'FBSDKShareKit','~> 17.0.1'
 #
 #  #穿山甲
 #  pod 'Ads-Global','~> 5.8.0.8'
