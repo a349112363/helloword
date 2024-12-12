@@ -39,7 +39,7 @@ target 'helloword' do
   # Add the pods for any other Firebase products you want to use in your app
   # For example, to use Firebase Authentication and Cloud Firestore
 #  pod 'FirebaseAuth'
-pod 'FirebaseFirestore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'main'
+pod 'FirebaseFirestore'
 #  pod 'FirebaseCrashlytics'
 #  pod 'GoogleSignIn'
 #  pod 'FBSDKLoginKit','~> 17.0.1'
