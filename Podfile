@@ -29,7 +29,7 @@ target 'helloword' do
 #  pod 'Reusable'
 #  pod 'SDWebImage'
   # Add the Firebase pod for Google Analytics
-  pod 'FirebaseAnalytics'
+#  pod 'FirebaseAnalytics'
 #  pod 'NVActivityIndicatorView'
 #  pod 'UITableView+FDTemplateLayoutCell'
 #  pod 'IQKeyboardManagerSwift'
@@ -40,7 +40,7 @@ target 'helloword' do
   # For example, to use Firebase Authentication and Cloud Firestore
 #  pod 'FirebaseAuth'
 #pod 'FirebaseFirestore'
-#  pod 'FirebaseCrashlytics'
+  pod 'FirebaseCrashlytics'
 #  pod 'GoogleSignIn'
 #  pod 'FBSDKLoginKit','~> 17.0.1'
 #  pod 'FBSDKShareKit','~> 17.0.1'
