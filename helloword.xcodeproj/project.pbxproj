@@ -305,7 +305,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloword/Pods-helloword-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		58E5E59952526D22FC7D3C65 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -322,7 +321,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloword/Pods-helloword-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		7580D2ACBA90DF525971206F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
