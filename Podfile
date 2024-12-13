@@ -7,32 +7,32 @@ target 'helloword' do
   use_frameworks!
 
   # Pods for helloword
-#  pod 'RxSwift'
-#  pod 'RxCocoa'
-#  pod 'RxGesture'
-#  pod 'RxSwiftExt'
-#  pod 'RxDataSources'
-#  pod 'NSObject+Rx', '~> 5.0'
-#  pod 'MJRefresh'
-#  pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
-#  pod 'YYText'
-#  pod 'SwifterSwift', '~> 5.0'
-#  pod 'MBProgressHUD'
-#  pod 'Moya'
-#  pod 'SnapKit'
-#  pod 'SwiftyJSON'
-#  pod 'HandyJSON'
-#  pod 'GTMBase64'
-#  pod 'HBDNavigationBar', '~> 1.7.5'
-#  pod 'Hue'
-#  pod 'JSONModel', '~> 1.2.0'
-#  pod 'Reusable'
-#  pod 'SDWebImage'
-#  # Add the Firebase pod for Google Analytics
-#  pod 'FirebaseAnalytics'
-#  pod 'NVActivityIndicatorView'
-#  pod 'UITableView+FDTemplateLayoutCell'
-#  pod 'IQKeyboardManagerSwift'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxGesture'
+  pod 'RxSwiftExt'
+  pod 'RxDataSources'
+  pod 'NSObject+Rx', '~> 5.0'
+  pod 'MJRefresh'
+  pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
+  pod 'YYText'
+  pod 'SwifterSwift', '~> 5.0'
+  pod 'MBProgressHUD'
+  pod 'Moya'
+  pod 'SnapKit'
+  pod 'SwiftyJSON'
+  pod 'HandyJSON'
+  pod 'GTMBase64'
+  pod 'HBDNavigationBar', '~> 1.7.5'
+  pod 'Hue'
+  pod 'JSONModel', '~> 1.2.0'
+  pod 'Reusable'
+  pod 'SDWebImage'
+  # Add the Firebase pod for Google Analytics
+  pod 'FirebaseAnalytics'
+  pod 'NVActivityIndicatorView'
+  pod 'UITableView+FDTemplateLayoutCell'
+  pod 'IQKeyboardManagerSwift'
 #  # For Analytics without IDFA collection capability, use this pod instead
 #  # pod ‘Firebase/AnalyticsWithoutAdIdSupport’
 
@@ -40,8 +40,8 @@ target 'helloword' do
   # For example, to use Firebase Authentication and Cloud Firestore
 #  pod 'FirebaseAuth'
 #pod 'FirebaseFirestore'
-#  pod 'FirebaseCrashlytics'
-#  pod 'GoogleSignIn'
+  pod 'FirebaseCrashlytics'
+  pod 'GoogleSignIn'
   pod 'FBSDKLoginKit','~> 17.0.1'
   pod 'FBSDKShareKit','~> 17.0.1'
 
