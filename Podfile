@@ -28,7 +28,7 @@ target 'helloword' do
   pod 'JSONModel', '~> 1.2.0'
   pod 'Reusable'
   pod 'SDWebImage'
-   Add the Firebase pod for Google Analytics
+#   Add the Firebase pod for Google Analytics
   pod 'FirebaseAnalytics'
   pod 'NVActivityIndicatorView'
   pod 'UITableView+FDTemplateLayoutCell'
