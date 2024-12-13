@@ -36,8 +36,8 @@ target 'helloword' do
   # For Analytics without IDFA collection capability, use this pod instead
   # pod ‘Firebase/AnalyticsWithoutAdIdSupport’
 
-   Add the pods for any other Firebase products you want to use in your app
-   For example, to use Firebase Authentication and Cloud Firestore
+#   Add the pods for any other Firebase products you want to use in your app
+#   For example, to use Firebase Authentication and Cloud Firestore
 #  pod 'FirebaseAuth'
 #  pod 'FirebaseFirestore'
   pod 'FirebaseCrashlytics'
