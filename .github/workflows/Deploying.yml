@@ -62,10 +62,7 @@ jobs:
                    -sdk iphoneos \
                    -configuration AdHoc \
                    -archivePath $PWD/build/helloword.xcarchive \
-                   archive | tee xcodebuild.log
-
-    - name: Show build log
-      run: cat xcodebuild.log
+                   clean archive | xcpretty
 
     - name: Export IPA
       run: |
