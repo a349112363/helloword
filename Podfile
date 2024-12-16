@@ -38,7 +38,7 @@ target 'helloword' do
 
 #   Add the pods for any other Firebase products you want to use in your app
 #   For example, to use Firebase Authentication and Cloud Firestore
-#  pod 'FirebaseAuth'
+# pod 'FirebaseAuth'
 #  pod 'FirebaseFirestore'
   pod 'FirebaseCrashlytics'
   pod 'GoogleSignIn'
