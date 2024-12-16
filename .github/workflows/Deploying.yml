@@ -47,9 +47,15 @@ jobs:
     - name: pod install  CocoaPods
       run: |
         pod --version
-        rm -rf Pods/
-        rm -rf Podfile.lock
         pod install
+
+    - name: Cache CocoaPods
+      uses: actions/cache@v2
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+         ${{ runner.os }}-pods-
 
     - name: Clean Xcode Derived Data
       run: |
