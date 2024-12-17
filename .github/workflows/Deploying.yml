@@ -47,7 +47,7 @@ jobs:
 
     - name: Install CocoaPods
       run: 
-        pod install
+        pod install --repo-update --no-use-binaries
 
 
     - name: Clean Xcode Derived Data
