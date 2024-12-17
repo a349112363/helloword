@@ -44,18 +44,21 @@ jobs:
         security unlock-keychain -p "" build.keychain
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
 
-    - name: pod install  CocoaPods
+    - name: Set up CocoaPods
       run: |
-        pod --version
-        pod install
+        pod repo remove master
+        pod repo add master https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git
 
     - name: Cache CocoaPods
       uses: actions/cache@v2
       with:
         path: Pods
-        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        key: ${{ runner.os }}-pod-cache-${{ hashFiles('**/Podfile.lock') }}
         restore-keys: |
-         ${{ runner.os }}-pods-
+         ${{ runner.os }}-pod-cache-
+
+    - name: Install CocoaPods
+      run: pod install --verbose
 
     - name: Clean Xcode Derived Data
       run: |
