@@ -10,10 +10,18 @@ PODS:
     - GoogleUtilities/Environment (~> 8.0)
     - GoogleUtilities/UserDefaults (~> 8.0)
     - PromisesObjC (~> 2.4)
+  - AppLovinMediationFacebookAdapter (6.15.0.0):
+    - AppLovinSDK
+    - FBAudienceNetwork (= 6.15.0)
+  - AppLovinMediationMintegralAdapter (7.6.2.0.0):
+    - AppLovinSDK
+    - MintegralAdSDK (= 7.6.2)
+    - MintegralAdSDK/BidSplashAd (= 7.6.2)
   - AppLovinSDK (12.4.2)
   - Differentiator (5.0.0)
   - FBAEMKit (17.0.3):
     - FBSDKCoreKit_Basics (= 17.0.3)
+  - FBAudienceNetwork (6.15.0)
   - FBSDKCoreKit (17.0.3):
     - FBAEMKit (= 17.0.3)
     - FBSDKCoreKit_Basics (= 17.0.3)
@@ -50,6 +58,46 @@ PODS:
   - IQKeyboardManagerSwift (6.5.16)
   - JSONModel (1.2.0)
   - MBProgressHUD (1.2.0)
+  - MintegralAdSDK (7.6.2):
+    - MintegralAdSDK/BannerAd (= 7.6.2)
+    - MintegralAdSDK/BidBannerAd (= 7.6.2)
+    - MintegralAdSDK/BidInterstitialVideoAd (= 7.6.2)
+    - MintegralAdSDK/BidNativeAd (= 7.6.2)
+    - MintegralAdSDK/BidNewInterstitialAd (= 7.6.2)
+    - MintegralAdSDK/BidRewardVideoAd (= 7.6.2)
+    - MintegralAdSDK/InterstitialVideoAd (= 7.6.2)
+    - MintegralAdSDK/NativeAd (= 7.6.2)
+    - MintegralAdSDK/NewInterstitialAd (= 7.6.2)
+    - MintegralAdSDK/RewardVideoAd (= 7.6.2)
+  - MintegralAdSDK/BannerAd (7.6.2):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/BidBannerAd (7.6.2):
+    - MintegralAdSDK/BannerAd
+    - MintegralAdSDK/BidNativeAd
+  - MintegralAdSDK/BidInterstitialVideoAd (7.6.2):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/InterstitialVideoAd
+  - MintegralAdSDK/BidNativeAd (7.6.2):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/BidNewInterstitialAd (7.6.2):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/NewInterstitialAd
+  - MintegralAdSDK/BidRewardVideoAd (7.6.2):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/RewardVideoAd
+  - MintegralAdSDK/BidSplashAd (7.6.2):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/SplashAd
+  - MintegralAdSDK/InterstitialVideoAd (7.6.2):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NativeAd (7.6.2)
+  - MintegralAdSDK/NewInterstitialAd (7.6.2):
+    - MintegralAdSDK/InterstitialVideoAd
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/RewardVideoAd (7.6.2):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/SplashAd (7.6.2):
+    - MintegralAdSDK/NativeAd
   - MJRefresh (3.7.9)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
@@ -122,6 +170,8 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
+  - AppLovinMediationFacebookAdapter (~> 6.15.0.0)
+  - AppLovinMediationMintegralAdapter (~> 7.6.2.0)
   - AppLovinSDK (~> 12.4.1)
   - FBSDKLoginKit (~> 17.0.1)
   - FBSDKShareKit (~> 17.0.1)
@@ -157,9 +207,12 @@ SPEC REPOS:
     - Alamofire
     - AppAuth
     - AppCheckCore
+    - AppLovinMediationFacebookAdapter
+    - AppLovinMediationMintegralAdapter
     - AppLovinSDK
     - Differentiator
     - FBAEMKit
+    - FBAudienceNetwork
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
     - FBSDKLoginKit
@@ -177,6 +230,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - JSONModel
     - MBProgressHUD
+    - MintegralAdSDK
     - MJRefresh
     - Moya
     - "NSObject+Rx"
@@ -201,9 +255,12 @@ SPEC CHECKSUMS:
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
   AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
   AppCheckCore: cc8fd0a3a230ddd401f326489c99990b013f0c4f
+  AppLovinMediationFacebookAdapter: 30ddfcb09c1c9ff6778ba974f58e8f3204e6eebc
+  AppLovinMediationMintegralAdapter: fdafed44fa0b160cda17a923389f96b6c1169a05
   AppLovinSDK: 0d28d095238ec35cf1dc408ca2d983fb7a1803bb
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   FBAEMKit: 9900b2edd99a2d21629a6277e6166f14c6215799
+  FBAudienceNetwork: 80a035aa69cc3a71c99e44cb5c2874e4cef9909f
   FBSDKCoreKit: 0791f8f68a8630931a4c12aa23a56cc021551596
   FBSDKCoreKit_Basics: 46d6b472c0dd0a5a7e972c025033d1c567f54eb4
   FBSDKLoginKit: b4a4eba1d62eb452544411824f41689adabd5bd2
@@ -221,6 +278,7 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MintegralAdSDK: 0f9b41d7d49d0e90cbe27cdcb62fc1208e25e85d
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
@@ -241,6 +299,6 @@ SPEC CHECKSUMS:
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: ef67f28ac08eea63d8cb162795395ccf77c166ce
+PODFILE CHECKSUM: d8647e7e20cde9feae442d5ceb7a0722622fbd17
 
 COCOAPODS: 1.16.2
