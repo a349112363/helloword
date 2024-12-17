@@ -46,8 +46,8 @@ jobs:
 
     - name: Set up CocoaPods
       run: |
-        pod repo remove master
-        pod repo add master https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git
+        pod repo add Tsinghua https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git || true
+        pod repo update
 
     - name: Cache CocoaPods
       uses: actions/cache@v2
