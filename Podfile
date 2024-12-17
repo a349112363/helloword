@@ -42,7 +42,7 @@ target 'helloword' do
 #   Add the Firebase pod for Google Analytics
 #  pod 'FirebaseAnalytics'
 #  pod 'FirebaseCrashlytics'
-#  pod 'GoogleSignIn'
+  pod 'GoogleSignIn'
 #  pod 'FBSDKLoginKit','~> 17.0.1'
 #  pod 'FBSDKShareKit','~> 17.0.1'
 
@@ -50,7 +50,7 @@ target 'helloword' do
 #  pod 'Ads-Global','~> 5.8.0.8'
 
 #  max
-  pod 'AppLovinSDK','~> 12.4.1'
+#  pod 'AppLovinSDK','~> 12.4.1'
 #  pod 'AppLovinMediationFacebookAdapter','~> 6.15.0.0'
 #  pod 'AppLovinMediationMintegralAdapter','~> 7.6.2.0'
 #  pod 'AppLovinMediationByteDanceAdapter','~> 5.8.0.8'

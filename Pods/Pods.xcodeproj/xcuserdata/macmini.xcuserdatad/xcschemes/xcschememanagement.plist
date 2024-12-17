@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>AppLovinSDK.xcscheme</key>
+		<key>AppAuth-AppAuthCore_Privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AppAuth.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AppCheckCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,12 +34,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTMAppAuth-GTMAppAuth_Privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMAppAuth.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMBase64.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTMSessionFetcher-GTMSessionFetcher_Core_Privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Google-Mobile-Ads-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleSignIn-GoogleSignIn.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleSignIn.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -40,6 +80,16 @@
 			<false/>
 		</dict>
 		<key>GoogleUserMessagingPlatform.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleUtilities-GoogleUtilities_Privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleUtilities.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -100,6 +150,16 @@
 			<false/>
 		</dict>
 		<key>Pods-helloword.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PromisesObjC-FBLPromises_Privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PromisesObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

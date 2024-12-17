@@ -1,11 +1,38 @@
 PODS:
   - Alamofire (5.10.1)
-  - AppLovinSDK (12.4.2)
+  - AppAuth (1.7.5):
+    - AppAuth/Core (= 1.7.5)
+    - AppAuth/ExternalUserAgent (= 1.7.5)
+  - AppAuth/Core (1.7.5)
+  - AppAuth/ExternalUserAgent (1.7.5):
+    - AppAuth/Core
+  - AppCheckCore (11.2.0):
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/UserDefaults (~> 8.0)
+    - PromisesObjC (~> 2.4)
   - Differentiator (5.0.0)
   - Google-Mobile-Ads-SDK (11.1.0):
     - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleSignIn (8.0.0):
+    - AppAuth (< 2.0, >= 1.7.3)
+    - AppCheckCore (~> 11.0)
+    - GTMAppAuth (< 5.0, >= 4.1.1)
+    - GTMSessionFetcher/Core (~> 3.3)
   - GoogleUserMessagingPlatform (2.7.0)
+  - GoogleUtilities/Environment (8.0.2):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Logger (8.0.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (8.0.2)
+  - GoogleUtilities/UserDefaults (8.0.2):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
+  - GTMAppAuth (4.1.1):
+    - AppAuth/Core (~> 1.7)
+    - GTMSessionFetcher/Core (< 4.0, >= 3.3)
   - GTMBase64 (1.0.1)
+  - GTMSessionFetcher/Core (3.5.0)
   - HandyJSON (5.0.2)
   - HBDNavigationBar (1.7.7)
   - Hue (5.0.0)
@@ -22,6 +49,7 @@ PODS:
   - NVActivityIndicatorView (5.2.0):
     - NVActivityIndicatorView/Base (= 5.2.0)
   - NVActivityIndicatorView/Base (5.2.0)
+  - PromisesObjC (2.4.0)
   - Reusable (4.1.2):
     - Reusable/Storyboard (= 4.1.2)
     - Reusable/View (= 4.1.2)
@@ -83,8 +111,8 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
-  - AppLovinSDK (~> 12.4.1)
   - Google-Mobile-Ads-SDK (~> 11.1.0)
+  - GoogleSignIn
   - GTMBase64
   - HandyJSON
   - HBDNavigationBar (~> 1.7.5)
@@ -113,11 +141,16 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - AppLovinSDK
+    - AppAuth
+    - AppCheckCore
     - Differentiator
     - Google-Mobile-Ads-SDK
+    - GoogleSignIn
     - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - GTMAppAuth
     - GTMBase64
+    - GTMSessionFetcher
     - HandyJSON
     - HBDNavigationBar
     - Hue
@@ -128,6 +161,7 @@ SPEC REPOS:
     - Moya
     - "NSObject+Rx"
     - NVActivityIndicatorView
+    - PromisesObjC
     - Reusable
     - RxCocoa
     - RxDataSources
@@ -145,11 +179,16 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
-  AppLovinSDK: 0d28d095238ec35cf1dc408ca2d983fb7a1803bb
+  AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
+  AppCheckCore: cc8fd0a3a230ddd401f326489c99990b013f0c4f
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   Google-Mobile-Ads-SDK: 4a1f2ccef63660f9a74efc6a6ea979483d421aaa
+  GoogleSignIn: ce8c89bb9b37fb624b92e7514cc67335d1e277e4
   GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
+  GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
+  GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
+  GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   HBDNavigationBar: 6ba38b99637039c831ce460364d5398f29fa0685
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
@@ -160,6 +199,7 @@ SPEC CHECKSUMS:
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   NVActivityIndicatorView: fe52a6a68664c2df8991d7d9e3d86d8d19453c53
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
   RxCocoa: 2d33c1e1e5d66492052ad46b11024ae287572880
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
@@ -175,6 +215,6 @@ SPEC CHECKSUMS:
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 6aa9f796a47c4dd088063709d8721075e478cea9
+PODFILE CHECKSUM: f9b3333ebd73d123c27eceaeda6ccacb1142cd61
 
 COCOAPODS: 1.16.2
