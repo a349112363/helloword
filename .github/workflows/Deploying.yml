@@ -50,7 +50,6 @@ jobs:
 
     - name: Install CocoaPods
       run: 
-	gem install cocoapods
         pod --version
         pod install
 
