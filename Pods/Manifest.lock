@@ -10,6 +10,7 @@ PODS:
     - GoogleUtilities/Environment (~> 8.0)
     - GoogleUtilities/UserDefaults (~> 8.0)
     - PromisesObjC (~> 2.4)
+  - AppLovinSDK (12.4.2)
   - Differentiator (5.0.0)
   - FBAEMKit (17.0.3):
     - FBSDKCoreKit_Basics (= 17.0.3)
@@ -121,6 +122,7 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
+  - AppLovinSDK (~> 12.4.1)
   - FBSDKLoginKit (~> 17.0.1)
   - FBSDKShareKit (~> 17.0.1)
   - Google-Mobile-Ads-SDK (~> 11.1.0)
@@ -155,6 +157,7 @@ SPEC REPOS:
     - Alamofire
     - AppAuth
     - AppCheckCore
+    - AppLovinSDK
     - Differentiator
     - FBAEMKit
     - FBSDKCoreKit
@@ -198,6 +201,7 @@ SPEC CHECKSUMS:
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
   AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
   AppCheckCore: cc8fd0a3a230ddd401f326489c99990b013f0c4f
+  AppLovinSDK: 0d28d095238ec35cf1dc408ca2d983fb7a1803bb
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   FBAEMKit: 9900b2edd99a2d21629a6277e6166f14c6215799
   FBSDKCoreKit: 0791f8f68a8630931a4c12aa23a56cc021551596
@@ -237,6 +241,6 @@ SPEC CHECKSUMS:
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: afaf89ace81f0da74022d1cd5443772e822222f0
+PODFILE CHECKSUM: ef67f28ac08eea63d8cb162795395ccf77c166ce
 
 COCOAPODS: 1.16.2

@@ -436,6 +436,15 @@ THE SOFTWARE.
    limitations under the License.
 
 
+## AppLovinSDK
+
+
+Copyright 2024 AppLovin Corp. All rights reserved.
+
+The AppLovin SDK is available under a commercial license (https://www.applovin.com/eula).
+
+
+
 ## Differentiator
 
 MIT License
