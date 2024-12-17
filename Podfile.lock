@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.10.1)
+  - AppLovinSDK (12.4.2)
   - Differentiator (5.0.0)
   - Google-Mobile-Ads-SDK (11.1.0):
     - GoogleUserMessagingPlatform (>= 1.1)
@@ -8,6 +9,7 @@ PODS:
   - HandyJSON (5.0.2)
   - HBDNavigationBar (1.7.7)
   - Hue (5.0.0)
+  - IQKeyboardManagerSwift (6.5.16)
   - JSONModel (1.2.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.9)
@@ -17,6 +19,9 @@ PODS:
     - Alamofire (~> 5.0)
   - "NSObject+Rx (5.2.2)":
     - RxSwift (~> 6.2)
+  - NVActivityIndicatorView (5.2.0):
+    - NVActivityIndicatorView/Base (= 5.2.0)
+  - NVActivityIndicatorView/Base (5.2.0)
   - Reusable (4.1.2):
     - Reusable/Storyboard (= 4.1.2)
     - Reusable/View (= 4.1.2)
@@ -74,19 +79,23 @@ PODS:
   - SwifterSwift/UIKit (5.2.0)
   - SwiftyJSON (5.0.2)
   - Toast-Swift (5.1.1)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
   - YYText (1.0.7)
 
 DEPENDENCIES:
+  - AppLovinSDK (~> 12.4.1)
   - Google-Mobile-Ads-SDK (~> 11.1.0)
   - GTMBase64
   - HandyJSON
   - HBDNavigationBar (~> 1.7.5)
   - Hue
+  - IQKeyboardManagerSwift
   - JSONModel (~> 1.2.0)
   - MBProgressHUD
   - MJRefresh
   - Moya
   - "NSObject+Rx (~> 5.0)"
+  - NVActivityIndicatorView
   - Reusable
   - RxCocoa
   - RxDataSources
@@ -98,11 +107,13 @@ DEPENDENCIES:
   - SwifterSwift (~> 5.0)
   - SwiftyJSON
   - Toast-Swift (~> 5.0)
+  - "UITableView+FDTemplateLayoutCell"
   - YYText
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AppLovinSDK
     - Differentiator
     - Google-Mobile-Ads-SDK
     - GoogleUserMessagingPlatform
@@ -110,11 +121,13 @@ SPEC REPOS:
     - HandyJSON
     - HBDNavigationBar
     - Hue
+    - IQKeyboardManagerSwift
     - JSONModel
     - MBProgressHUD
     - MJRefresh
     - Moya
     - "NSObject+Rx"
+    - NVActivityIndicatorView
     - Reusable
     - RxCocoa
     - RxDataSources
@@ -127,10 +140,12 @@ SPEC REPOS:
     - SwifterSwift
     - SwiftyJSON
     - Toast-Swift
+    - "UITableView+FDTemplateLayoutCell"
     - YYText
 
 SPEC CHECKSUMS:
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
+  AppLovinSDK: 0d28d095238ec35cf1dc408ca2d983fb7a1803bb
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   Google-Mobile-Ads-SDK: 4a1f2ccef63660f9a74efc6a6ea979483d421aaa
   GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
@@ -138,11 +153,13 @@ SPEC CHECKSUMS:
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   HBDNavigationBar: 6ba38b99637039c831ce460364d5398f29fa0685
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
+  NVActivityIndicatorView: fe52a6a68664c2df8991d7d9e3d86d8d19453c53
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
   RxCocoa: 2d33c1e1e5d66492052ad46b11024ae287572880
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
@@ -155,8 +172,9 @@ SPEC CHECKSUMS:
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 7f8906071912cc5a0058dadfc4c68c0ee44c40ee
+PODFILE CHECKSUM: 6aa9f796a47c4dd088063709d8721075e478cea9
 
 COCOAPODS: 1.16.2
