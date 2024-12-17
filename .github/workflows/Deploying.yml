@@ -45,11 +45,12 @@ jobs:
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
 
 
+
     - name: Install CocoaPods
       run: 
-        pod --version
-        rm -rf Pods/
-        rm -rf Podfile.lock
+        pod --version \
+        rm -rf Pods/ \
+        rm -rf Podfile.lock \
         pod install
 
     - name: Clean Xcode Derived Data
