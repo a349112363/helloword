@@ -44,13 +44,6 @@ jobs:
         security unlock-keychain -p "" build.keychain
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
 
-    - name: Cache CocoaPods
-      uses: actions/cache@v2
-      with:
-        path: Pods
-        key: ${{ runner.os }}-pod-cache-${{ hashFiles('**/Podfile.lock') }}
-        restore-keys: |
-         ${{ runner.os }}-pod-cache-
 
     - name: Install CocoaPods
       run: 
