@@ -305,6 +305,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloword/Pods-helloword-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		58E5E59952526D22FC7D3C65 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

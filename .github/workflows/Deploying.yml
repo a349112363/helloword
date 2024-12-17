@@ -53,7 +53,11 @@ jobs:
          ${{ runner.os }}-pod-cache-
 
     - name: Install CocoaPods
-      run: pod install
+      run: 
+        pod --version
+        rm -rf Pods/
+        rm -rf Podfile.lock
+        pod install
 
     - name: Clean Xcode Derived Data
       run: |
