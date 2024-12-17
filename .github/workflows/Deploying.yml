@@ -44,11 +44,6 @@ jobs:
         security unlock-keychain -p "" build.keychain
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
 
-    - name: Set up CocoaPods
-      run: |
-        pod repo add Tsinghua https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git || true
-        pod repo update
-
     - name: Cache CocoaPods
       uses: actions/cache@v2
       with:
