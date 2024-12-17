@@ -39,7 +39,7 @@ target 'helloword' do
 #   For example, to use Firebase Authentication and Cloud Firestore
 #  pod 'FirebaseAuth'
 #  pod 'FirebaseFirestore'
-#   Add the Firebase pod for Google Analytics
+#  Add the Firebase pod for Google Analytics
   pod 'FirebaseAnalytics'
   pod 'FirebaseCrashlytics'
   pod 'GoogleSignIn'
