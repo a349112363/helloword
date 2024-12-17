@@ -48,9 +48,8 @@ jobs:
 
     - name: Install CocoaPods
       run: 
-        pod --version \
-        rm -rf Pods/ \
-        rm -rf Podfile.lock \
+        pod --version
+
         pod install
 
     - name: Clean Xcode Derived Data
