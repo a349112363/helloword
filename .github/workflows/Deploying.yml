@@ -45,9 +45,7 @@ jobs:
         security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" build.keychain
 
 
-    - name: Install CocoaPods
-      run: 
-        pod install --repo-update --no-ansi
+
 
 
     - name: Clean Xcode Derived Data
