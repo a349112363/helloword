@@ -46,7 +46,7 @@ target 'helloword' do
   pod 'FBSDKLoginKit','~> 17.0.1'
   pod 'FBSDKShareKit','~> 17.0.1'
 
-  #穿山甲
+  # 穿山甲
   pod 'Ads-Global','~> 5.8.0.8'
 
 #  max
